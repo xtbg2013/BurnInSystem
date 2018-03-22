@@ -1,0 +1,31 @@
+@echo off
+SET PROG=%"%C:\Program Files\MesService%"%
+SET SERVICE_EXE=%"%\Mes_Service.exe%"%
+SET FIRSTPART=%WINDIR%"\Microsoft.NET\Framework\v"
+SET SECONDPART="\InstallUtil.exe"
+SET SERVICENAME=%"%MesService%"%
+SET DELETEBATCH="\*.bat"
+
+SET DOTNETVER=4.0.30319
+IF EXIST %FIRSTPART%%DOTNETVER%%SECONDPART% GOTO uninstall
+SET DOTNETVER=2.0.50727
+IF EXIST %FIRSTPART%%DOTNETVER%%SECONDPART% GOTO uninstall
+SET DOTNETVER=1.1.4322
+IF EXIST %FIRSTPART%%DOTNETVER%%SECONDPART% GOTO uninstall
+SET DOTNETVER=1.0.3705
+IF EXIST %FIRSTPART%%DOTNETVER%%SECONDPART% GOTO uninstall
+GOTO fail
+
+:uninstall
+ECHO Found .NET Framework version %DOTNETVER%
+ECHO Uninstalling service "%PROG%"
+%FIRSTPART%%DOTNETVER%%SECONDPART% /U /name=%SERVICENAME% "%PROG%%SERVICE_EXE%" 
+RD "%PROG%" /s /q
+GOTO end
+
+:fail
+echo FAILURE -- Could not find .NET Framework uninstall
+
+:end
+ECHO DONE!!!
+Pause

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CONFIG>
+  <OVEN_PORT>COM1</OVEN_PORT>
+  <ReadCurrentk>0.0003</ReadCurrentk>
+  <ReadCurrentb>0.0012</ReadCurrentb>
+  <CONFIG_FILE>C:\FinTest\MESConfig.ini</CONFIG_FILE>
+  <RESOURCE>BITester</RESOURCE>
+</CONFIG>

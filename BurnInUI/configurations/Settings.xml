@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Settings>
+  <OtherSetting>
+    <DataSource>{0}\SQLEXPRESS</DataSource>
+    <DatabaseName>BMS37</DatabaseName>
+    <LocalBiDataSummaryTable>BI_Data_Summary</LocalBiDataSummaryTable>
+    <LocalBiDataTable>BI_Data</LocalBiDataTable>
+    <RemoteDataSource>wux-prod04\prod01</RemoteDataSource>
+    <RemoteDatabaseName>BI_Data</RemoteDatabaseName>
+    <RemoteSummayBiDataTable>BI_Data_Summary_TEST</RemoteSummayBiDataTable>
+    <RemoteBiDataTable>BI_Data_TEST</RemoteBiDataTable>
+    <Period Unit="min">1</Period>
+    <MBTPATH>.\configurations</MBTPATH>
+    <HEATTIME Unit="min">0</HEATTIME>
+    <COM_ERROR_TOLARENCE>3</COM_ERROR_TOLARENCE>
+    <Condition_Timeout Unit="min">3</Condition_Timeout>
+    <TbiesServer></TbiesServer>
+    <OVEN_PORT>COM19</OVEN_PORT>
+    <FloorCount>10</FloorCount>
+    <Floor1>COM13</Floor1>
+    <Floor2>COM15</Floor2>
+    <Floor3>COM7</Floor3>
+    <Floor4>COM4</Floor4>
+    <Floor5>COM6</Floor5>
+    <Floor6>COM9</Floor6>
+    <Floor7>COM15</Floor7>
+    <Floor8>COM15</Floor8>
+    <Floor9>COM15</Floor9>
+    <Floor10>COM15</Floor10>
+    <BakupPeriodMinutes>1</BakupPeriodMinutes>
+    <DeletePeriodDays>1</DeletePeriodDays>
+  </OtherSetting>
+  <MES>
+    <MES_SERVICE>http://localhost:8734/MesApi</MES_SERVICE>
+  </MES>
+  <UPS>
+    <SWITCH>OFF</SWITCH>
+    <TIMEOUT>1</TIMEOUT>
+    <PORTNAME>COM25</PORTNAME>
+  </UPS>
+</Settings> 

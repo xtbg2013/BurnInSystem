@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataService", "DataService.csproj", "{3BAFFFA5-35C0-4C17-91B0-F4B3E6AEFBC1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestDataServie", "UnitTestDataServie\UnitTestDataServie.csproj", "{EA850DFE-D395-49D4-AC37-825110E30295}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		DebugWithVirtualInstruments|Any CPU = DebugWithVirtualInstruments|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3BAFFFA5-35C0-4C17-91B0-F4B3E6AEFBC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BAFFFA5-35C0-4C17-91B0-F4B3E6AEFBC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BAFFFA5-35C0-4C17-91B0-F4B3E6AEFBC1}.DebugWithVirtualInstruments|Any CPU.ActiveCfg = DebugWithVirtualInstruments|Any CPU
+		{3BAFFFA5-35C0-4C17-91B0-F4B3E6AEFBC1}.DebugWithVirtualInstruments|Any CPU.Build.0 = DebugWithVirtualInstruments|Any CPU
+		{3BAFFFA5-35C0-4C17-91B0-F4B3E6AEFBC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BAFFFA5-35C0-4C17-91B0-F4B3E6AEFBC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA850DFE-D395-49D4-AC37-825110E30295}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA850DFE-D395-49D4-AC37-825110E30295}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA850DFE-D395-49D4-AC37-825110E30295}.DebugWithVirtualInstruments|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA850DFE-D395-49D4-AC37-825110E30295}.DebugWithVirtualInstruments|Any CPU.Build.0 = Debug|Any CPU
+		{EA850DFE-D395-49D4-AC37-825110E30295}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA850DFE-D395-49D4-AC37-825110E30295}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

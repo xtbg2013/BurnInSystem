@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="192b48de-db40-4144-9789-3ffa1cd3caca" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8733/MesService" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="MesService.xsd" MetadataType="Schema" ID="7a93430c-2b03-4917-98d7-e05f7b50324f" SourceId="1" SourceUrl="http://localhost:8733/MesService?xsd=xsd1" />
+    <MetadataFile FileName="MesService1.xsd" MetadataType="Schema" ID="72cc1d42-9c2e-4f86-a345-5e62e8fd0979" SourceId="1" SourceUrl="http://localhost:8733/MesService?xsd=xsd0" />
+    <MetadataFile FileName="MesService2.xsd" MetadataType="Schema" ID="4cf30c75-803b-440d-95d2-23a8fdb72e68" SourceId="1" SourceUrl="http://localhost:8733/MesService?xsd=xsd2" />
+    <MetadataFile FileName="MesService.disco" MetadataType="Disco" ID="2ef31ed2-cf6c-4f98-97f1-606a2e9c4647" SourceId="1" SourceUrl="http://localhost:8733/MesService?disco" />
+    <MetadataFile FileName="MesAdapter.wsdl" MetadataType="Wsdl" ID="fab1e746-7e97-4f9c-b97a-d5a2d7a6f7c2" SourceId="1" SourceUrl="http://localhost:8733/MesService?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

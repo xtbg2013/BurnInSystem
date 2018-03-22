@@ -1,0 +1,76 @@
+﻿Version 3.0:
+   1.System UI function
+     1.1 Active UI dev.
+     1.2 UML Class and logic analysis
+     1.3 Slot control separated
+     1.4  binding SN after select slot
+     1.5  Enhance the calculation cost time function
+   2.System Logic function
+     2.1 Reflect state by database
+     2.2 Select or unselect the board
+     2.3 Binding SN By UI
+     2.4 Disable the board which already selected
+     2.5 Check connection of the boards in loaded state
+     2.6 Start to burn-in of the Ready boards
+     2.7 Pause the burn-in state of one board
+     2.8 Disable the board which finished burnin
+   3.System State Machine function
+     3.1 The UI button linked with Main logic
+     3.2 Add the new states for the bussiness step
+     3.3 Update the board and seat UI showing
+
+Version 3.1:
+   1.Add COM ERROR CONTROL to enhense the tolarence of com exception. 
+   2.Add lock in function WaitForExecute.
+   3.Move WaitForExecute to interface level.
+   4.Update process to add HeatTime for user to configure HEATTIME before Burn-In
+   5.Add Executable function to avoid multi actions occurred in system operation
+   6.Add UPS function.
+
+Version 3.2:
+   1.Implement the function of UPS check comm and check status
+   2.Independent project to verify the dirver of the UPS.
+   3.Update for no need to check OVEN temp function
+   4.Verify and Add delay time to 100ms.
+   5.Add UnitInfo and State class to BIModel.
+   6.Reverse the operation of state change, ensure the state updated in database firstly.
+
+Version 3.3:
+	1.Support standard UI to 1280*750, which can run in small display;
+	2.Support Maximum and Minimum Functionality;
+	3.Only 4 button and 2 right-click menu to control the workflow;
+	4.Real-time state in one screen to monitor system state;
+	5.Binding record to accelerate the recovery speed rebind;
+	6.UI slot changeable by configuration file;
+	7.Action to Parallelize:
+		Check Connection;
+		Enable Board;
+		Read Data;
+		Disable Board;
+	8.Performance Improvement is depends on hardware independency(QSFP28G can be about 400%~900%);
+	9.Slot independency:
+		Any time, empty slot can binding the Serial Number;
+		Any time, loaded slot can check the connection;
+		Any time, ready slot can start burn-in process;
+		Any time, running slot can pause the burn-in process;
+		Any time, finished slot can out of the OVEN;
+	10.Multi Product Support:
+		Variety types of product can be burn-in in the different floor at the same time if hardware support;
+
+
+Version 3.4:
+	1. Fix Logic Bug, avoid user to do remove function when burnin board is not in Loaded state.
+	2. Change idleFlag to volitile mode, to avoid dead lock by multi-thread access miss.
+
+Version 3.4.1:
+	1. Adjust the compile path, from BurnInSystem to OUT/BMS;
+	2. Add LogAnalyzer as LogTool to release as well for log extract;
+	3. Add DataTool as DataTool to release as well for data collect;
+
+Version 3.4.2:
+	1. Enhance the Data searching function to query data faster
+	2. Add the function of TEC open and close
+	3. Add the Index for the BI_Data and BI_Unit
+	4. Enhance the chart showing function
+	5. Changed the MES function to web service
+	6. Add the Spec type to support compare, stop and pause function

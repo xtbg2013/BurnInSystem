@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="XMLSchema" targetNamespace="http://tempuri.org/XMLSchema1.xsd" elementFormDefault="qualified"
+	xmlns="http://tempuri.org/XMLSchema1.xsd" xmlns:mstns="http://tempuri.org/XMLSchema1.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="ModuleSummary">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="_x0040_UniqueID" type="xs:string" minOccurs="0" />
+				<xs:element name="_x0040_SessionID" type="xs:string" minOccurs="0" />
+				<xs:element name="_x0040_Container" type="xs:string" minOccurs="0" />
+				<xs:element name="_x0040_TimeStamp" type="xs:dateTime" minOccurs="0" />
+				<xs:element name="_x0040_DcdName" type="xs:string" minOccurs="0" />
+				<xs:element name="_x0040_WrittenToMES" type="xs:string" minOccurs="0" />
+				<xs:element name="_x0040_WriteStatus" type="xs:string" minOccurs="0" />
+				<xs:element name="ModuleSerialNum" type="xs:string" minOccurs="0" />
+				<xs:element name="ModuleType" type="xs:string" minOccurs="0" />
+				<xs:element name="ModulePartNum" type="xs:string" minOccurs="0" />
+				<xs:element name="AssemblyPartNum" type="xs:string" minOccurs="0" />
+				<xs:element name="Result" type="xs:string" minOccurs="0" />
+				<xs:element name="ErrAbbr" type="xs:string" minOccurs="0" />
+				<xs:element name="WhichTest" type="xs:string" minOccurs="0" />
+				<xs:element name="TestOperator" type="xs:string" minOccurs="0" />
+				<xs:element name="TestVersion" type="xs:string" minOccurs="0" />
+				<xs:element name="TestTimeStamp" type="xs:string" minOccurs="0" />
+				<xs:element name="TestDuration_s" type="xs:string" minOccurs="0" />
+				<xs:element name="SpecVersion" type="xs:string" minOccurs="0" />
+				<xs:element name="SpecDate" type="xs:string" minOccurs="0" />
+				<xs:element name="SpecFreq_GHz" type="xs:string" minOccurs="0" />
+				<xs:element name="IsRetest" type="xs:string" minOccurs="0" />
+				<xs:element name="Rework" type="xs:string" minOccurs="0" />
+				<xs:element name="CustomerSerialNum" type="xs:string" minOccurs="0" />
+				<xs:element name="OriginalPartNum" type="xs:string" minOccurs="0" />
+				<xs:element name="OsaSerialNum" type="xs:string" minOccurs="0" />
+				<xs:element name="OsaPartNum" type="xs:string" minOccurs="0" />
+				<xs:element name="HeaderSerialNum" type="xs:string" minOccurs="0" />
+				<xs:element name="TestPlanName" type="xs:string" minOccurs="0" />
+				<xs:element name="TestPlanVersion" type="xs:string" minOccurs="0" />
+				<xs:element name="TestPlanDate" type="xs:string" minOccurs="0" />
+				<xs:element name="TosaAssemblyNum" type="xs:string" minOccurs="0" />
+				<xs:element name="BasePartNum" type="xs:string" minOccurs="0" />
+				<xs:element name="BaseAssemblyNum" type="xs:string" minOccurs="0" />
+				<xs:element name="TestStation" type="xs:string" minOccurs="0" />
+				<xs:element name="ProductType" type="xs:string" minOccurs="0" />
+				<xs:element name="_x0040_LossBonusTaken" type="xs:string" minOccurs="0" />
+				<xs:element name="_x0040_LossBonusStatus" type="xs:string" minOccurs="0" />
+				<xs:element name="TestResult" type="xs:string" minOccurs="0" />
+			</xs:sequence>
+		</xs:complexType>
+		<xs:unique name="ModuleSummaryUniqueIDKey" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//ModuleSummary" />
+			<xs:field xpath="@UniqueID" />
+		</xs:unique>
+	</xs:element>
+	<xs:element name="dce_main">
+		<xs:complexType>
+			<xs:sequence>
+                <xs:element name="_x0040_UniqueID" type="xs:string" minOccurs="0" />
+                <xs:element name="_x0040_SessionID" type="xs:string" minOccurs="0" />
+                <xs:element name="_x0040_Container" type="xs:string" minOccurs="0" />
+                <xs:element name="_x0040_TimeStamp" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="_x0040_DcdName" type="xs:string" minOccurs="0" />
+                <xs:element name="_x0040_WrittenToMES" type="xs:string" minOccurs="0" />
+                <xs:element name="ParentHistoryId" type="xs:string" minOccurs="0" />
+                <xs:element name="Vcc" type="xs:string" minOccurs="0" />
+        </xs:sequence>
+		</xs:complexType>
+		<xs:unique name="TesterConfigurationUniqueIDKey" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//dc_details" />
+			<xs:field xpath="@UniqueID" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<ArrayOfBoardCurrents xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <BoardCurrents BoardName="L10-3" />
+  <BoardCurrents BoardName="L10-4">
+    <SlotInit Sn="1" position="1" currentDac="54" icc0="28.259999999999998" />
+    <SlotInit Sn="2" position="2" currentDac="53" icc0="28.259999999999998" />
+    <SlotInit Sn="3" position="3" currentDac="52" icc0="28.2" />
+    <SlotInit Sn="4" position="4" currentDac="53" icc0="27.959999999999997" />
+    <SlotInit Sn="5" position="5" currentDac="55" icc0="28.74" />
+    <SlotInit Sn="6" position="6" currentDac="54" icc0="27.659999999999997" />
+    <SlotInit Sn="7" position="7" currentDac="51" icc0="27.959999999999997" />
+    <SlotInit Sn="8" position="8" currentDac="51" icc0="28.379999999999995" />
+    <SlotInit Sn="9" position="9" currentDac="55" icc0="28.079999999999995" />
+    <SlotInit Sn="10" position="10" currentDac="54" icc0="29.339999999999996" />
+    <SlotInit Sn="11" position="11" currentDac="56" icc0="26.999999999999993" />
+    <SlotInit Sn="12" position="12" currentDac="51" icc0="27.779999999999994" />
+    <SlotInit Sn="13" position="13" currentDac="51" icc0="27" />
+    <SlotInit Sn="14" position="14" currentDac="61" icc0="26.22" />
+    <SlotInit Sn="15" position="15" currentDac="56" icc0="27.9" />
+    <SlotInit Sn="16" position="16" currentDac="55" icc0="28.26" />
+  </BoardCurrents>
+</ArrayOfBoardCurrents>
